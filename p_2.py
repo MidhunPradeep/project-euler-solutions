@@ -12,12 +12,13 @@ Answer: 4613732
 
 
 def fibonacci(n=None, limit=None):
-    if n:
+    if n:  # Find the first n elements of the Fibonacci series
         seq = [0, 1, 1, 2]
         for _ in range(3, n+1):
             seq.append(seq[-1] + seq[-2])
         return seq
-    if limit:
+
+    if limit:  # Find all elements in the fibonacci series <= limit
         seq = [0]
         x = 0
         y = 1
@@ -34,7 +35,8 @@ def fibonacci(n=None, limit=None):
 limit = int(input("Limit: "))
 
 a = fibonacci(limit=limit)
+
 sum_ = 0
-for i in range(0, len(a), 3):
+for i in range(0, len(a), 3):  # Every third element in the series is even.
     sum_ += a[i]
 print(sum_)

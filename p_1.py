@@ -14,7 +14,7 @@ i = 1
 while True:
     product = 3*i
     if product < limit:
-        multiples_3.add(product)
+        multiples_3.add(product)  # Find all multiples of 3 < limit
         i += 1
     else:
         break
@@ -24,9 +24,10 @@ i = 1
 while True:
     product = 5*i
     if product < limit:
-        multiples_5.add(product)
+        multiples_5.add(product)  # Find all multiples of 3 < limit
         i += 1
     else:
         break
 
+# Merge sets to remove duplicates and find sum
 print(sum(multiples_3 | multiples_5))
