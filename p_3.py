@@ -14,7 +14,7 @@ def get_prime_factors(n):
 
     # Divides n by every prime number < 10000 to check if it is a factor until n == 1.
     # This is enough to completely factorise 600851475143 in a small amount of time.
-    for i in my_functions.get_prime_array(100000):
+    for i in my_functions.get_prime_list(100000):
         if n == 1:
             break
         while n % i == 0:
@@ -24,7 +24,7 @@ def get_prime_factors(n):
     # If n > 1, do it all over again with a bigger prime number list. Shouldn't activate unless
     # number is ridiculously large.
     if n > 1:
-        for i in my_functions.get_prime_array(n):
+        for i in my_functions.get_prime_list(n):
             if n == 1:
                 break
             if i > 10000:

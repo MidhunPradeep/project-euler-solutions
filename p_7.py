@@ -9,24 +9,25 @@ Answer: 104743
 import math
 
 
-def get_prime(n):
+def get_nth_prime(n):
 
-    prime_array = [2]
+    prime_list = [2]
 
     i = 3
-    while len(prime_array) < n:
-        for j in prime_array:
+    while len(prime_list) < n:
+        for j in prime_list:
             if i % j == 0:
                 break
             if j > math.sqrt(i):
-                prime_array.append(i)
+                prime_list.append(i)
                 break
         else:
-            prime_array.append(i)
+            prime_list.append(i)
         i += 2
 
-    return prime_array[-1]
+    return prime_list[-1]
+
 
 n = int(input("N: "))
 
-print(get_prime(n))
+print(get_nth_prime(n))

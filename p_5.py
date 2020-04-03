@@ -16,14 +16,14 @@ def get_prime_factors(n):
         first_limit = n
     else:
         first_limit = 100000
-    for i in my_functions.get_prime_array(first_limit):
+    for i in my_functions.get_prime_list(first_limit):
         if n == 1:
             break
         while n % i == 0:
             prime_factors.append(i)
             n = n//i
     if n > 1:
-        for i in my_functions.get_prime_array(n):
+        for i in my_functions.get_prime_list(n):
             if n == 1:
                 break
             if i > 1000:
