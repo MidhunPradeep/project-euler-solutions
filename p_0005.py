@@ -21,7 +21,7 @@ def get_prime_factors(n):
             break
         while n % i == 0:
             prime_factors.append(i)
-            n = n//i
+            n = n // i
     if n > 1:
         for i in my_functions.get_prime_list(n):
             if n == 1:
@@ -29,7 +29,7 @@ def get_prime_factors(n):
             if i > 1000:
                 while n % i == 0:
                     prime_factors.append(i)
-                    n = n//i
+                    n = n // i
     return sorted(prime_factors)
 
 
@@ -47,7 +47,7 @@ for i in range(2, 21):
 
 product = 1
 for factor, power in factor_count.items():
-    product = product * (factor**power)
+    product = product * (factor ** power)
 print(product)
 
 # This one's a mess right now.

@@ -17,13 +17,13 @@ Answer: 25164150
 
 def sum_of_squares(n):
     sum_ = 0
-    for i in range(1, n+1):
-        sum_ += i**2
+    for i in range(1, n + 1):
+        sum_ += i ** 2
     return sum_
 
 
 def square_of_sum(n):
-    return sum(range(1, n+1))**2
+    return sum(range(1, n + 1)) ** 2
 
 
 def difference(n):

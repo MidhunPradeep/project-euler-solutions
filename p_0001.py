@@ -12,7 +12,7 @@ limit = int(input("Limit: "))
 multiples_3 = set()
 i = 1
 while True:
-    product = 3*i
+    product = 3 * i
     if product < limit:
         multiples_3.add(product)  # Find all multiples of 3 < limit
         i += 1
@@ -22,7 +22,7 @@ while True:
 multiples_5 = set()
 i = 1
 while True:
-    product = 5*i
+    product = 5 * i
     if product < limit:
         multiples_5.add(product)  # Find all multiples of 3 < limit
         i += 1

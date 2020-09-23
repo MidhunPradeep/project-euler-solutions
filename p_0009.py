@@ -17,9 +17,9 @@ def solves_p9(triplet):
 
 
 def generate_triplet(m, n):
-    a = m**2 - n**2
+    a = m ** 2 - n ** 2
     b = 2 * m * n
-    c = m**2 + n**2
+    c = m ** 2 + n ** 2
     return (a, b, c)
 
 

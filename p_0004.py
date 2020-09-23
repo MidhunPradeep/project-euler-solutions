@@ -19,13 +19,15 @@ def largest_palindrome(start, stop):
     # Example: Convert a range(1, 1000) -> range(999, 0, -1)
     reverse_start = stop - 1
     reverse_stop = start - 1
-    num_array = tuple(range(reverse_start, reverse_stop, - 1))
+    num_array = tuple(range(reverse_start, reverse_stop, -1))
 
     palindrome_list = []
     for i in num_array:
         for j in num_array:
             product = i * j
-            if is_palindrome(product):  # Generate a tuple of i and j if i * j is a palindrom
+            if is_palindrome(
+                product
+            ):  # Generate a tuple of i and j if i * j is a palindrom
                 palindrome_list.append((i, j, product))
 
     # Return the tuple with the largest value of i * j

@@ -36,9 +36,7 @@ while True:
     factor_count = my_functions.number_of_factors(triangular_num)
 
     if factor_count > limit:
-        print(
-            f"The triangular number {triangular_num} has {factor_count} factors."
-        )
+        print(f"The triangular number {triangular_num} has {factor_count} factors.")
         break
 
     i += 1

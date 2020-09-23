@@ -14,7 +14,7 @@ Answer: 4613732
 def fibonacci(n=None, limit=None):
     if n:  # Find the first n elements of the Fibonacci series
         seq = [0, 1, 1, 2]
-        for _ in range(3, n+1):
+        for _ in range(3, n + 1):
             seq.append(seq[-1] + seq[-2])
         return seq
 
